@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* NAVIGATION */
+nav {
+  height: 60px;
+  line-height: 60px;
+  background-color: #ddd;
+  text-align: center;
+}
+
+.burger-icon {
+  display: block;
+  margin-left: auto;
+  padding: 0 30px;
+  line-height: 60px;
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.nav-items {
+  display: none;
+}
+/* HEADER */
+.header {
+  position: relative;
+  background-image: url('../img/summit1.jpeg');
+  height: 330px;
+  background-size: cover;
+  background-position: center;
+}
+.summit1-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.summit2-text {
+  position: absolute;
+  color: blanchedalmond;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.summit2-text h1 {
+  color: blanchedalmond;
+  margin-bottom: 15px;
+  text-shadow: 3px 3px 5px #000;
+}
+.summit2-text span {
+  text-transform: uppercase;
+  color: #0099ff;
+}
+/* MAIN */
+main {
+  margin: 60px 0;
+}
+.about-us-info {
+  margin-bottom: 10px;
+  padding: 0 20px;
+}
+.section-title {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.products {
+  margin: 60px auto;
+}
+.product h3 {
+  text-transform: uppercase;
+}
+.product {
+  position: relative;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.first-product {
+  background-image: url('../img/kids1.jpeg');
+}
+.second-product {
+  background-image: url('../img/keyboard1.jpeg');
+}
+.third-product {
+  background-image: url('../img/cofee1.jpeg');
+}
+.fourth-product {
+  background-image: url('../img/pc1.jpeg');
+}
+.contact {
+  text-align: center;
+}
+.contact h3 {
+  text-transform: uppercase;
+  margin: 20px 0 5px;
+}
+footer {
+  text-align: center;
+  padding: 30px 10px;
+  background-color: #ddd;
+}
+/* MEDIA QUERIES */
+@media (min-width: 768px) {
+  .burger-icon {
+    display: none;
+  }
+  .nav-items {
+    display: block;
+  }
+  .nav-items a {
+    padding: 0 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s;
+  }
+  .nav-items a:hover {
+    color: #09f;
+  }
+  .header {
+    background-image: url('../img/summit2.jpeg');
+    height: 430px;
+  }
+  .summit2-text h1 {
+    font-size: 36px;
+  }
+  .summit2-text p {
+    font-size: 18px;
+  }
+  .product h3 {
+    text-transform: uppercase;
+    font-size: 24px;
+  }
+  @media (min-width: 992px) {
+    /* .products-box {
+      font-size: 0;
+    }
+    .product {
+      display: inline-block;
+      width: 50%;
+    } */
+  }
+  @media (min-width: 1200px) {
+    .summit2-text h1 {
+      font-size: 42px;
+    }
+    .summit2-text p {
+      font-size: 20px;
+    }
+  }
+}
